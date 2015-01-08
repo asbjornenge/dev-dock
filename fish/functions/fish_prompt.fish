@@ -18,8 +18,8 @@ function fish_prompt
   set -l blue (set_color -o blue)
   set -l normal (set_color normal)
 
-  set -l cwd $blue(pwd)
-  set -l arrow "$magenta> "
+  set -l cwd 🐳"  "$cyan$USER@$HOSTNAME $blue(pwd)
+  set -l arrow "$magenta❯ "
 
   if [ (_git_branch_name) ]
     set -l git_branch $red(_git_branch_name)

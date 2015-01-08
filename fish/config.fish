@@ -7,7 +7,7 @@
 #set -x DOCKER_TLS_VERIFY 1
 set -x GOPATH /srv/go
 set -x PATH $PATH /usr/local/share/npm/bin $GOPATH/bin /srv/smart/bin /srv/smart/terraform_bin /srv/google-cloud-sdk/bin
-set -x LANGUAGE en_US.UTF-8
-set -x LC_ALL en_US.UTF-8
-set -x LANG en_US.UTF-8
-set -x LC_TYPE en_US.UTF-8
+#set -x LANGUAGE en_US.UTF-8
+#set -x LC_ALL en_US.UTF-8
+#set -x LANG en_US.UTF-8
+#set -x LC_TYPE en_US.UTF-8
