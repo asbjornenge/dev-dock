@@ -9,6 +9,7 @@ RUN git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ADD fish /root/.config/fish
 ADD vimrc /root/.vimrc
 ADD gitconfig /root/.gitconfig
+ADD devcontainer_rsa /root/.ssh/id_rsa
 ENV LANG C.UTF-8
 WORKDIR /root
 ENTRYPOINT ["fish"]
