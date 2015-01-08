@@ -1,0 +1,4 @@
+#!/bin/bash
+URL="https://get.docker.com/builds/Linux/x86_64/docker-$1"
+curl http -o /usr/local/bin/docker
+chmod +x /usr/local/bin/docker

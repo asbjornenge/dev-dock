@@ -11,6 +11,7 @@ ADD vimrc /root/.vimrc
 ADD gitconfig /root/.gitconfig
 ADD devcontainer_rsa /root/.ssh/id_rsa
 ADD scripts/installvimplugins /usr/local/bin/installvimplugins
+ADD scripts/getdocker /usr/local/bin/getdocker
 ENV LANG C.UTF-8
 WORKDIR /root
 ENTRYPOINT ["fish"]
