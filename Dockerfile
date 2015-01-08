@@ -10,6 +10,7 @@ ADD fish /root/.config/fish
 ADD vimrc /root/.vimrc
 ADD gitconfig /root/.gitconfig
 ADD devcontainer_rsa /root/.ssh/id_rsa
+ADD scripts/installvimplugins /usr/local/bin/installvimplugins
 ENV LANG C.UTF-8
 WORKDIR /root
 ENTRYPOINT ["fish"]
