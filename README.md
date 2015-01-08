@@ -10,3 +10,4 @@ RSA key is in gitignore. Use the key carefully; few & low permissions.
 ## Scripts
 
     installvimplugins
+    getdocker <version>
