@@ -18,8 +18,13 @@ function fish_prompt
   set -l blue (set_color -o blue)
   set -l normal (set_color normal)
 
-  set -l cwd 🐳"  "$cyan$USER@$HOSTNAME $blue(pwd)
+  set -l usr 🐳"  "$cyan$USER@$HOSTNAME
+  set -l cwd $blue(pwd)
   set -l arrow "$magenta❯ "
+
+  if [ $DOCKER_HOST ]
+    set docker_info "$magenta$DOCKER_HOST"
+  end
 
   if [ (_git_branch_name) ]
     set -l git_branch $red(_git_branch_name)
@@ -32,9 +37,6 @@ function fish_prompt
   end
 
 
-  echo $cwd $git_info 
-  if [ $DOCKER_HOST ]
-    echo "$magenta$DOCKER_HOST"
-  end
+  echo $usr $docker_info $cwd $git_info 
   echo -n -s $arrow $normal
 end
