@@ -113,3 +113,5 @@ if has("autocmd")
     au BufNewFile,BufRead *.json setfiletype json syntax=javascript
     au BufNewFile,BufRead *.tf setfiletype ruby syntax=ruby
 endif
+" Helps CtrlP open files in current buffer
+let g:ctrlp_reuse_window  = 'startify'
