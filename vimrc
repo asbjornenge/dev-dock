@@ -115,3 +115,5 @@ if has("autocmd")
 endif
 " Helps CtrlP open files in current buffer
 let g:ctrlp_reuse_window  = 'startify'
+" Set 256 color mode
+set t_Co=256
