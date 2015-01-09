@@ -3,6 +3,9 @@ RUN apt-get update
 RUN apt-get -y install git dnsutils curl 
 RUN apt-get -y install fish man-db
 RUN apt-get -y install vim tmux htop
+RUN apt-get -y install python2.7
+RUN curl https://bootstrap.pypa.io/get-pip.py | python2.7
+RUN pip install tox
 RUN curl -sL https://deb.nodesource.com/setup | sudo bash -
 RUN apt-get install -y nodejs
 RUN npm install -g npm
